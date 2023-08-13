@@ -13,10 +13,10 @@ namespace objctv_test_case_2.Controllers
             return Ok(count);
         }
 
+
         [HttpPost]
         public IActionResult AddToCount([FromBody]int value)
         {
-            Console.WriteLine(value);
             try
             {
                 Server.AddToCount(value);
